@@ -49,4 +49,4 @@ fetch_server_file:
 	cd init && wget https://piston-data.mojang.com/v1/objects/8dd1a28015f51b1803213892b50b7b4fc76e594d/server.jar
 
 assign_ops:
-	echo "[\n  {\n    \"uuid\": \"e0047e4e-197e-42ad-8923-6bafad44bc0d\",\n    \"name\": \"${ADMIN_NAME}\",\n    \"level\": 4,\n    \"bypassesPlayerLimit\": false\n  }\n]" > init/ops.json
+	echo "[\n  {\n    \"uuid\": \"${ADMIN_UUID}\",\n    \"name\": \"${ADMIN_NAME}\",\n    \"level\": 4,\n    \"bypassesPlayerLimit\": false\n  }\n]" > init/ops.json
