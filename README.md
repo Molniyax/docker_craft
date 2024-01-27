@@ -11,7 +11,7 @@ Main ideas here are the simplicity and full transparency.
 |[Installation](#Installation)|
 |:---:|
 |[Usage](#Usage)|
-|[File structure](#File structure)|
+|[File structure](#File-structure)|
 
 
 ## Installation
