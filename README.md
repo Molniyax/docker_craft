@@ -105,6 +105,8 @@ Logs will appear on screen and will follow server execution until **Ctrl+C** is 
 To start server in **semi-interactive** mode use:
 ```bash
 make start_it
+```
+Server will work until **Ctrl+C** is pressed.
 
 
 ## File structure
@@ -122,8 +124,5 @@ graph TD;
 	misc-->|Blacklist| C(banned-players.json);
 	misc-->|Blacklist| D(banned-ips.json);
 ```
-
-```
-Server will work until **Ctrl+C** is pressed.
 
 
