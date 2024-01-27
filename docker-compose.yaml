@@ -1,0 +1,16 @@
+services:
+  server:
+    container_name: "${INSTANCE_NAME}"
+    build:
+      context: .
+      dockerfile: ./.Dockerfile
+    restart: always
+    volumes:
+      - ./volumes/world:/server/world
+      - ./volumes/logs:/server/logs
+      - ./volumes/crash-reports:/server/crash-reports
+      - ./volumes/misc/ops.json:/server/ops.json
+      - ./volumes/misc/banned-players.json:/server/banned-players.json
+      - ./volumes/misc/banned-ips.json:/server/banned-ips.json
+    ports:
+      - "${PORT}:25565"
