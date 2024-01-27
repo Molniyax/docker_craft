@@ -18,10 +18,12 @@ Main ideas here are the simplicity and full transparency.
 ### 1) Check dependencies:
 Make sure to have this packages installed on your system:
 - Docker
+
 	You can find full installation manual here:
 	https://docs.docker.com/desktop/install/linux-install/
 
 - Docker compose
+
 	You can find full installation manual here:
 	https://docs.docker.com/compose/install/
 
