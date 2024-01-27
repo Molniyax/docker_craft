@@ -105,6 +105,24 @@ Logs will appear on screen and will follow server execution until **Ctrl+C** is 
 To start server in **semi-interactive** mode use:
 ```bash
 make start_it
+
+
+## File structure
+
+```mermaid
+graph TD;
+	A{Docker-craft}-->|Initial server files| init;
+	A{Docker-craft}-->|Docker volumes| volumes;
+	A{Docker-craft}-->|Docker configuration files| E(Docker-compose.yaml, Makefile, etc)
+	volumes-->|All save data| world;
+	volumes-->|Log dumps| logs;
+	volumes-->|Saved crash-reports| crash-reports;
+	volumes-->|Miscellaneous data| misc;
+	misc-->|List of servers OP's| B(ops.json);
+	misc-->|Blacklist| C(banned-players.json);
+	misc-->|Blacklist| D(banned-ips.json);
+```
+
 ```
 Server will work until **Ctrl+C** is pressed.
 
