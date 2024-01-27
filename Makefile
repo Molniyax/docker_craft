@@ -21,6 +21,11 @@ start_it: stop create_volumes
 logs:
 	docker logs -f ${INSTANCE_NAME}
 
+enter:
+	docker exec -it ${INSTANCE_NAME} sh
+
+
+
 
 
 

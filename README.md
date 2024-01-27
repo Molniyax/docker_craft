@@ -116,6 +116,12 @@ make start_it
 ```
 Server will work until **Ctrl+C** is pressed.
 
+To **enter** insides of the container use:
+```bash
+make enter
+```
+You'll get into the shell of your container, **Ctrl+D** to exit.
+
 
 ## File structure
 
