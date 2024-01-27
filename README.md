@@ -8,6 +8,12 @@ Docker-craft is just a simple ready repo to quickly enroll  new java Minecraft s
 Main ideas here are the simplicity and full transparency.
 
 
+|[Installation](#Installation)|
+|:---:|
+|[Usage](#Usage)|
+|[File structure](#File structure)|
+
+
 ## Installation
 ### 1) Check dependencies:
 Make sure to have this packages installed on your system:
