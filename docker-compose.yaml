@@ -4,6 +4,8 @@ services:
     build:
       context: .
       dockerfile: ./.Dockerfile
+    stdin_open: true
+    tty: true
     restart: always
     volumes:
       - ./volumes/world:/server/world

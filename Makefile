@@ -15,14 +15,17 @@ stop:
 
 
 # Additional controls
-start_it: stop create_volumes
-	docker-compose up -it --build --force-recreate
+interact:
+	docker attach ${INSTANCE_NAME} --detach-keys="ctrl-d"
 
 logs:
 	docker logs -f ${INSTANCE_NAME}
 
 enter:
 	docker exec -it ${INSTANCE_NAME} sh
+
+kick_all:
+	docker exec -it ${INSTANCE_NAME} screen -S server -X stuff "/kick @a^M"
 
 
 
