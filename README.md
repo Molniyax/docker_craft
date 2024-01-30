@@ -110,17 +110,22 @@ make logs
 ```
 Logs will appear on screen and will follow server execution until **Ctrl+C** is pressed.
 
-To start server in **semi-interactive** mode use:
+To **interact** with the server console use:
 ```bash
-make start_it
+make interact
 ```
-Server will work until **Ctrl+C** is pressed.
+Press **Ctrl+D** to stop interaction.
 
 To **enter** insides of the container use:
 ```bash
 make enter
 ```
 You'll get into the shell of your container, **Ctrl+D** to exit.
+
+To **kick all** the players use:
+```bash
+make kick_all
+```
 
 
 ## File structure
