@@ -138,7 +138,7 @@ graph TD;
 	misc-->|List of servers OP's| B(ops.json);
 	misc-->|Blacklist| C(banned-players.json);
 	misc-->|Blacklist| D(banned-ips.json);
-	misc-->|Whitelist| E(whitelist.json);
+	misc-->|Whitelist| F(whitelist.json);
 ```
 
 
