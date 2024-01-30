@@ -78,11 +78,7 @@ git clone https://github.com/Molniyax/docker_craft.git
 	example.env
 	```
 	
-	Here you need to set username and UUID of the first server OP, this is important step, because you wan't have full access to the server's console due lack of full interactive mode.
-	
-	Please pay attention to the fact, that UUID will be different in online-mode server and offline-mode one.
-	
-	Also here you can change name of the container and server port.
+	Here you can change name of the container and the server port.
 
 ### 4) Initialize project via make
 Just execute this command from the root of the repo:
@@ -142,6 +138,7 @@ graph TD;
 	misc-->|List of servers OP's| B(ops.json);
 	misc-->|Blacklist| C(banned-players.json);
 	misc-->|Blacklist| D(banned-ips.json);
+	misc-->|Whitelist| E(whitelist.json);
 ```
 
 
